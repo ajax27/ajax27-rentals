@@ -1,0 +1,57 @@
+.bwm-form {
+  form {
+    margin-bottom: 10px;
+  }
+
+  .alert {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1px;
+    padding-top: 18px;
+    height: 40px;
+  }
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .image-container {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .form-text {
+    font-size: 13px;
+  }
+
+  .catchphrase {
+    text-align: center;
+    font-size: 42px;
+    position: absolute;
+    color: #f1f1f1;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+
+  .btn-bwm-main {
+    background-color: $btn-color;
+    color: $main-white-color;
+    border: 1px solid $main-black-color;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $main-nav-color;
+      color: $main-black-color;
+    }
+  }
+}

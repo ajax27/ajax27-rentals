@@ -1,0 +1,54 @@
+@import "./colors.scss";
+
+.navbar {
+  padding: 10px 30px;
+  background-color: $main-nav-color !important;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-family: cursive;
+    color: $main-blue-color;
+    letter-spacing: 1px;
+    font-weight: bolder;
+
+    &:hover {
+      color: $main-blue-color;
+    }
+  }
+
+  .bwm-search {
+    height: 40px;
+    width: 250px;
+  }
+
+  .search-btn {
+    color: $main-white-color;
+    border: 1px solid $main-black-color;
+    background-color: $btn-color;
+    font-weight: 600;
+    height: 40px;
+    width: 90px;
+    letter-spacing: 1px;
+  }
+
+  .search-btn:hover {
+    color: $main-black-color;
+    background-color: #c1ce48;
+  }
+
+  .nav-link {
+    color: $main-black-color !important;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+
+  .nav-link:hover {
+    color: $main-white-color !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: $main-blue-color;
+    color: $main-white-color;
+  }
+}

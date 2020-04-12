@@ -1,0 +1,44 @@
+@import "./header.scss";
+@import "./colors.scss";
+@import "./home-rental";
+@import "./rental-detail";
+@import "./forms";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+.bwm-container {
+  padding-top: 70px;
+}
+
+.page-title {
+  color: $main-blue-color;
+}
+
+.rental-link {
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.type- {
+  &apartment {
+    color: #c414be;
+  }
+
+  &house {
+    color: #cf2b2b;
+  }
+
+  &bedsit {
+    color: #f39407;
+  }
+}
