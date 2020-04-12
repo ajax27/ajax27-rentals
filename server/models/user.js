@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcryptjs');
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
@@ -22,6 +23,21 @@ const userSchema = new Schema({
     maxlength: [32, 'Invalid length! Maximum is 32 characters'],
     required: 'Password is required!'
   }
+})
+
+userSchema.methods.hasSamePassword = function (providedPassword) {
+  return bcrypt.compareSync(providedPassword, this.password)
+}
+
+userSchema.pre('save', function (next) {
+  const user = this;
+
+  bcrypt.genSalt(10, (err, salt) => {
+    bcrypt.hash(user.password, salt, (err, hash) => {
+      user.password = hash;
+      next();
+    })
+  })
 })
 
 module.exports = mongoose.model('User', userSchema);
