@@ -41,10 +41,12 @@
     font-size: 18px;
     font-weight: 600;
     padding: 0 10px;
+    cursor: pointer;
   }
 
   .nav-link:hover {
     color: $main-white-color !important;
+    cursor: pointer;
   }
 
   .dropdown-item:hover {
