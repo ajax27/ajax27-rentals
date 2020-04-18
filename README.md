@@ -1,5 +1,25 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to setup project
+
+: Create `dev.js` file in `server/config/dev.js` with DB Connection String and 'JWT' secret
+
+```javascript
+module.exports = {
+  DB_URI: "YUOR_MONGODB_CONNECTION_STRING", // From https://www.mongodb.com/cloud
+  JWT_SECRET: "YOUR_UNIQUE_VALUE", // eg: 'skjdbb4os0#sjj*2bs'
+};
+```
+
+## Get Up And Running
+
+🌄 To start dev server run `npm install` and `npm start`
+👾 To run API server got to `server folder` with Command `cd server` and run `node index`
+
+## Populate Database wit Fake Data
+
+⚔️ If `dev.js` file is in `server` folder, the command to populate DB is `node fakeDB/cleanDB.js`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -36,12 +56,6 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
