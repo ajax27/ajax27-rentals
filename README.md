@@ -13,6 +13,7 @@ module.exports = {
 
 ## Get Up And Running
 
+⚠️ Create a `config` folder in the `server` folder, and then a `dev.js` file in the `config` folder
 🌄 To start dev server run `npm install` and `npm start`
 👾 To run API server got to `server folder` with Command `cd server` and run `node index`
 
