@@ -16,7 +16,7 @@ module.exports = {
 🌄 To start dev server run `npm install` and `npm start`
 👾 To run API server got to `server folder` with Command `cd server` and run `node index`
 
-## Populate Database wit Fake Data
+## Populate Database with Fake Data
 
 ⚔️ If `dev.js` file is in `server` folder, the command to populate DB is `node fakeDB/cleanDB.js`
 
